@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body onload="abcd()">
+    <script>
+        function abcd()
+        {
+            var UN=sessionStorage.getItem("UserName");
+            var pw=sessionStorage.getItem("Password");
+            var em=sessionStorage.getItem("Email");
+            var age=sessionStorage.getItem("Age");
+            var add=sessionStorage.getItem("Address");
+            var ten=sessionStorage.getItem("10th");
+            var twe=sessionStorage.getItem("12th");
+            var deg=sessionStorage.getItem("Degree");
+            var uni=sessionStorage.getItem("University");
+
+//             # run a new httpd container with port forwarding from 9001 to 80
+// > docker container run -itd --name myhttpd -p 9001:80 httpd
+            var refUname = document.getElementById("UserName");
+            var refPass = document.getElementById("Password");
+            var refEmail = document.getElementById("Email");
+            var refAge= document.getElementById("Age");
+            var refAdd = document.getElementById("Address")
+            var ref10th=document.getElementById("10th")
+            var ref12th =document.getElementById("12th")
+            var refDeg = document.getElementById("Degree")
+            var refUni = document.getElementById("University")
+
+            refUname.value = UN;
+            refPass.value= pw;
+            refEmail.value= em;
+            refAge.value= age;
+            refAdd.value= add;
+            ref10th.value = ten;
+            ref12th.value= twe;
+            refDeg.value=deg;
+            refUni.value=uni;
+
+        }
+    </script>
+<div>
+    <table>
+        <tr>
+            <td>
+                UserName
+            </td>
+            <td>
+                Password
+            </td>
+            <td>
+                Email
+            </td>
+            <td>
+                Age
+            </td>
+            
+            <td>
+                Address
+            </td>
+            <td>
+                10th %
+            </td>
+            <td>
+                12th %
+            </td>
+            <td>
+                Degree
+            </td>
+            <td>
+                University
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="UserName" value="">
+            </td>
+            <td>
+                <input type="text" id="Password" value="">
+            </td>
+            <td>
+                <input type="text" id="Email" value="">
+            </td>
+            <td>
+                <input type="text" id="Age" value="">
+            </td>
+            <td>
+                <input type="text" id="Address" value="">
+            </td>
+            <td>
+                <input type="text" id="10th" value="">
+            </td>
+            <td>
+                <input type="text" id="12th" value="">
+            </td>
+            <td>
+                <input type="text" id="Degree" value="">
+            </td>
+            <td>
+                <input type="text" id="University" value="">
+            </td>
+            
+        </tr>
+    </table>
+</div>    
+</body>
+</html>

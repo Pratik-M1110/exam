@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <div>
+        UserName:
+        <input type="text" id="UserName" value=""/>
+    </div>
+    <div>
+        Password:
+        <input type="text" id="Password" value=""/>
+    </div>
+    <div>
+        Email:
+        <input type="text" id="Email" value=""/>
+    </div>
+    <div>
+        Age:
+        <input type="number" id="Age" value=""/>
+    </div>
+    <div>
+        Gender:
+        
+        <div class="radio">
+            <label>
+                <input type="radio" name="Male" id="Male" value="" checked="">
+                Male
+                <input type="radio" name="Female" id="Female" value="" checked="">
+                Female
+            </label>
+        </div>
+    </div>
+    <div>
+        Address:
+        <input type="text" id="Address" value=""/>
+    </div>
+    <div>
+        10th %:
+        <input type="number" id="10th" value=""/>
+    </div>
+    <div>
+        12th %
+        <input type="number" id="12th" value=""/>
+    </div>
+    <div>
+        Degree
+        <input type="text" id="Degree" value=""/>
+    </div>
+    <div>
+        University
+        <input type="text" id="University" value=""/>
+    </div>
+    
+    <div>
+    <button onclick="next()">Register</button>
+</form>
+    <script>
+        function next()
+        {
+            var refUname = document.getElementById("UserName");
+            var refPass = document.getElementById("Password");
+            var refEmail = document.getElementById("Email");
+            var refAge= document.getElementById("Age");
+            var refAdd = document.getElementById("Address")
+            var ref10th=document.getElementById("10th")
+            var ref12th =document.getElementById("12th")
+            var refDeg = document.getElementById("Degree")
+            var refUni = document.getElementById("University")
+
+            sessionStorage.setItem("UserName", 
+            refUname.value);
+            
+            sessionStorage.setItem("Password", 
+            refPass.value);
+
+            sessionStorage.setItem("Email", 
+            refEmail.value);
+
+            sessionStorage.setItem("Age", 
+            refAge.value);
+
+            sessionStorage.setItem("Address", 
+            refAdd.value);
+
+            sessionStorage.setItem("10th", 
+            ref10th.value);
+
+            sessionStorage.setItem("12th", 
+            ref12th.value);
+
+            sessionStorage.setItem("Degree", 
+            refDeg.value);
+
+            sessionStorage.setItem("University", 
+            refUni.value);
+
+            window.location.href = "summary.html"
+        }                                 
+    </script>
+    <!-- function StoreNMove()
+    {
+        var refTotxtName = 
+            document.getElementById("txtName");
+        
+        var refTotxtAddress = 
+            document.getElementById("txtAddress");
+        var refTotxtPhone= 
+            document.getElementById("txtPhone");
+        
+        var refTotxtEMail= 
+            document.getElementById("txtEMail");
+
+        debugger;
+        localStorage.setItem("UName", 
+                            refTotxtName.value);
+        localStorage.setItem("UCity", 
+                             refTotxtAddress.value);
+
+        sessionStorage.setItem("Phone", 
+                            refTotxtPhone.value);
+        sessionStorage.setItem("EMail", 
+                             refTotxtEMail.value);
+
+        //Navigate to next page
+        window.location.href = "09Demo.html"
+    } -->
+    
+</body>
+</html>
